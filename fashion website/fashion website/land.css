@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-bar{
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   background-color: green;
+}
+nav{
+    text-align: right;
+    flex: 1;
+}
+nav ul{
+     display: inline-block;
+     list-style-type: none;
+     }
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.logo p{
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+}
+.socials{
+    padding-left: 60px;
+    justify-content: space-between;
+}
+.nav-bar a{
+    text-decoration: none;
+    color:white;
+}
+.rating i{
+    color: gold;
+}
+.col-2 h1, a {
+    text-align: left;
+    padding-left: 35px;
+    color: black;
+}
+p{
+    padding-left: 50px;
+}
+.rating{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+.pricing p{
+    text-align: left;
+    margin: 5px;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    line-height: 50px;
+    font-size: 50px;
+    margin: 20px;
+}
+.btn{
+    display: inline-block;
+    background: green;
+    color: white;
+    margin: 30px 0;
+    padding: 8px 30px;
+    border-radius: 20px;
+    transform: translate(+32%,0);
+    text-decoration: none;
+}
+.btn:hover{
+     background: greenyellow;
+}
+.header .row{
+    margin-top: 60px;
+}
+h1{
+    text-align: center;
+    font-size: large;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.cards{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 20px;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.other-product p{
+      font-size: large;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 15px;
+      margin-bottom: 15px;
+}
+.card{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+@media(min-width:370){
+    .cards{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding: 10px;
+    }
+}
+img {
+    width: 100%;
+    display: block;
+}
+.content{
+    padding: 2px;
+    font-size: medium;
+    margin-top: 5px;
+    text-align: left;
+}
+.card--content h4{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+     color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: green;
+    color: #ffffff;
+    font-size: 25px;
+    width: 30px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px 15px;
+    margin: 30px;
+}
+.footer-center h2{
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 15px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p a {
+    color: white;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}       
